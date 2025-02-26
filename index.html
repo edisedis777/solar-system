@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Solar System</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="An interactive visualization of our solar system with realistic proportions and orbital periods" />
+  </head>
+  <body>
+    <div class="controls" aria-label="Solar system controls">
+      <div class="control-group">
+        <button id="toggle-play" aria-label="Pause animation">Pause</button>
+        <div class="speed-control">
+          <label for="speed-slider"
+            >Speed: <span id="speed-value">1x</span></label
+          >
+          <input
+            type="range"
+            id="speed-slider"
+            min="1"
+            max="100"
+            step="0.1"
+            value="1"
+            aria-label="Animation speed control" />
+        </div>
+      </div>
+      <div class="planet-buttons">
+        <button data-planet="sun" aria-label="Focus on the Sun">Sun</button>
+        <button data-planet="mercury" aria-label="Focus on Mercury">
+          Mercury
+        </button>
+        <button data-planet="venus" aria-label="Focus on Venus">Venus</button>
+        <button data-planet="earth" aria-label="Focus on Earth">Earth</button>
+        <button data-planet="mars" aria-label="Focus on Mars">Mars</button>
+        <button data-planet="jupiter" aria-label="Focus on Jupiter">
+          Jupiter
+        </button>
+        <button data-planet="saturn" aria-label="Focus on Saturn">
+          Saturn
+        </button>
+        <button data-planet="uranus" aria-label="Focus on Uranus">
+          Uranus
+        </button>
+        <button data-planet="neptune" aria-label="Focus on Neptune">
+          Neptune
+        </button>
+        <button data-planet="pluto" aria-label="Focus on Pluto">Pluto</button>
+      </div>
+      <div class="zoom-controls">
+        <button id="zoom-in" aria-label="Zoom in">+</button>
+        <button id="zoom-reset" aria-label="Reset zoom">Reset</button>
+        <button id="zoom-out" aria-label="Zoom out">-</button>
+      </div>
+    </div>
+
+    <div class="info-panel" aria-live="polite">
+      <h2 id="planet-name">The Solar System</h2>
+      <p id="planet-info">
+        Click on a planet or use the buttons above to learn more about each
+        celestial body.
+      </p>
+    </div>
+
+    <div id="canvas-container">
+      <canvas id="stars-canvas"></canvas>
+      <div id="solar-system" class="container">
+        <!-- Planets will be added by JavaScript -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
