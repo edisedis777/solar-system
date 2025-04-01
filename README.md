@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 
-The Solar System
+The Solar System Project is currently in development.
 
 ## Demo
 Try it Live: [Here](https://edisedis777.github.io/solar-system/)
