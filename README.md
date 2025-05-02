@@ -4,10 +4,13 @@
 [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#)
 [![Markdown](https://img.shields.io/badge/Markdown-%23000000.svg?logo=markdown&logoColor=white)](#)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 
 The Solar System Project is currently in development.
 
 ## Demo
 Try it Live: [Here](https://edisedis777.github.io/solar-system/)
+
+
+## License
+Distributed under the GNU Affero General Public License v3.0 License. See `LICENSE` for more information.
